@@ -1,0 +1,9 @@
+
+input(type="button", value="New Note", data-bind="click: addNote")
+section.notes_wrapper(data-bind="template: { name: 'note-template', foreach: notes, afterAdd: addDrag}")
+
+
+|   <script type="text/html" id="note-template"><article data-bind="attr: { 'id': id }"><textarea data-bind="value: note, valueUpdate: 'afterkeypress'"></textarea></article></script>
+    
+script(src='/socket.io/socket.io.js')
+script(src='/viewmodels/notes.js');

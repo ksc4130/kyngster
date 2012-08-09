@@ -1,0 +1,26 @@
+{
+  "name": "Notes",
+  "version": "0.0.1",
+  "author": "kyngster.com",
+  "description": "Notes",
+  "contributors": [ 
+    {
+      "name": "Kyle Curren",
+      "email": "c4130@gmail.com"
+    } 
+  ],  
+  "main": "./server.js",  
+  "keywords": [
+    "notes"
+  ],
+  "dependencies" : {
+    "express": "2.5.7",
+    "jade": ">= 0.0.1",
+    "socket.io": ">= 0.8.7"
+  },
+  "noAnalyze": true,
+  "license": "kyngster",
+  "engines": {
+    "node": ">=0.6.14"
+  }
+}
