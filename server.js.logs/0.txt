@@ -102,3 +102,6 @@ debug: clearing poll timeout
 debug: xhr-polling writing 8::
 debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
 debug: xhr-polling closed due to exceeded duration
+debug: fired close timeout for client GLsQHu40sEAKSuP2X6F4
+info: transport end (close timeout)
+debug: discarding transport
