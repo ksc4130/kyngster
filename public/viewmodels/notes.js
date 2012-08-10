@@ -32,19 +32,21 @@ $(function() {
                 }).children('intput.btnX').hide().removeClass('hidden');
 
                 $(el).children('textarea.note').keyup(function() {
+
+
                     //maybe figure this with the font size included*************???????????
-                    var fonSizCalc = parseInt($(this).css('font-size')) * .47,
-                        len = $(this).val().length,
-                        totalWidth = $(this).width() - parseInt($(this).css('margin-left'));
-                        linesNeeded = (len / (totalWidth / fonSizCalc)),
-                        numOfLines = $(this).height() / parseInt($(this).css('line-height'));
+                    //var fonSizCalc = parseInt($(this).css('font-size')) * .47,
+                    //len = $(this).val().length,
+                    //totalWidth = $(this).width() - parseInt($(this).css('margin-left'));
+                    //linesNeeded = (len / (totalWidth / fonSizCalc)),
+                    //numOfLines = $(this).height() / parseInt($(this).css('line-height'));
                     //console.log(totalWidth);
                     //console.log('fonsizcalc: ' + fonSizCalc + ' linesNeeded: ' + linesNeeded + ' numLines: ' + numOfLines + ' len: ' + len);
 
-                    if(linesNeeded > numOfLines) {
-                        //console.log('grow');
-                        $(this).animate({ height: "+=5px", width: "+=5px" }, 500).parent().animate({ height: "+=5px", width: "+=5px" }, 500);
-                    }
+                    //if(linesNeeded > numOfLines) {
+                    //console.log('grow');
+                    //$(this).animate({ height: "+=5px", width: "+=5px" }, 500).parent().animate({ height: "+=5px", width: "+=5px" }, 500);
+                    //}
                 });
             },
             _note = function(note) {
@@ -128,4 +130,17 @@ $(function() {
         $(this).css({ zIndex: 0 }).children('input.btnX').fadeOut(1000);
     });
 
-});           //end doc ready
+    $('body').delegate('article.note textarea.note', 'overflow', function(e) {
+        var toGrow = parseInt($(this).css('line-height'));
+        toGrow = toGrow / 2;
+        toGrow = toGrow + "px";
+        $(this).animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
+        $(this).parent().animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
+    });
+
+    $('body').delegate('article.note textarea.note', 'overflow', function(e) {
+        //$(this).animate({ height: "-=5px", width: "-=5px" }, 500).parent().animate({ height: "+=5px", width: "+=5px" }, 500);
+    });
+
+
+});                   //end doc ready
