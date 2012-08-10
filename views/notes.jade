@@ -1,9 +1,15 @@
+link(rel='stylesheet', href='/styles/notes.css')
 
-input(type="button", value="New Note", data-bind="click: addNote")
-section.notes_wrapper(data-bind="template: { name: 'note-template', foreach: notes, afterAdd: addDrag}")
+header#controls.closed
+    section#controls
+        nav
+            input(type="button", class="btn", value="Add Note", data-bind="click: addNote")
+    section#btnControls
 
+// ko template: { name: 'note-template', foreach: notes, afterAdd: addDrag}
+// /ko
 
-|   <script type="text/html" id="note-template"><article data-bind="attr: { 'id': id }"><textarea data-bind="value: note, valueUpdate: 'afterkeypress'"></textarea></article></script>
+|   <script type="text/html" id="note-template"><article class="note" data-bind="attr: { 'id': id }"><input class="btnX hidden" data-bind="click: remove" type="button" value="X" /><textarea class="note" data-bind="value: note, valueUpdate: 'afterkeypress'"></textarea></article></script>
     
 script(src='/socket.io/socket.io.js')
 script(src='/viewmodels/notes.js');

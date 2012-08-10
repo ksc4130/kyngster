@@ -1,4 +1,20 @@
 $(function() {
+    var $header = $('header#controls'),
+        $pan = $('header#controls section#controls'),
+        $btnPan = $('header#controls section#btnControls');
+
+    $btnPan.click(function(e) {
+        if($header.hasClass('closed')) {
+            $header.animate({ top: 0 }, 400);
+            $header.removeClass('closed');
+        }
+        else {
+            $header.animate({ top: -30 }, 400);
+            $header.addClass('closed');
+        }
+
+    });
+
     var vm = function() {
         var _notes = ko.observableArray([]),
             _addNote = function(note) {
@@ -11,15 +27,16 @@ $(function() {
             },
             _cords = ko.observable(''),
             _addDrag = function(el) {
-                $(el).draggable().resizable({ alsoResize: $(el).children('textarea') });
+                $(el).draggable().resizable({ alsoResize: $(el).children('textarea') }).children('intput.btnX').hide().removeClass('hidden');
             },
             _note = function(note) {
                 var self = this;
-                self.id = (note && !typeof(note.note) =='undefined') ? note.note.id : _notes().length;
-                self.note = (note && !typeof(note.note) =='undefined') ? ko.observable(note.note.note) : ko.observable('');
+                self.id = (note && !typeof (note.note) == 'undefined') ? note.note.id : _notes().length;
+                self.note = (note && !typeof (note.note) == 'undefined') ? ko.observable(note.note.note) : ko.observable('');
                 self.beingUpdated = ko.observable(false);
                 self.remove = function() {
-                    _notes.remove(this);
+                    _notes.remove(self);
+                    socket.emit('removeNote', { id: self.id });
                 };
                 self.left = ko.observable('');
                 self.top = ko.observable('');
@@ -34,7 +51,7 @@ $(function() {
                         socket.emit('updateNote', { id: self.id, note: self.note() });
                     }
                 });
-                if(!note || typeof(note.note) =='undefined') {
+                if(!note || typeof (note.note) == 'undefined') {
                     socket.emit('addNote', { id: self.id, note: self.note() });
                 }
 
@@ -76,16 +93,21 @@ $(function() {
         vm.addNote({ note: note });
     });
 
-    $('body').delegate('article', 'mousedown', function(e) {
+    socket.on('removeNote', function(note) {
+        var el = document.getElementById(note.id);
+        ko.dataFor(el).remove();
+    });
+
+    $('body').delegate('article.note', 'mousedown', function(e) {
         $(this).mousemove(function() {
             vm.cords('left: ' + $(this).css('left') + ' top: ' + $(this).css('top'));
             ko.dataFor(this).left($(this).css('left'));
             ko.dataFor(this).top($(this).css('top'));
         });
-    }).delegate('article', 'mouseover', function(e) {
-        $('article').css({ zIndex: 0 });
-        $(this).css({ zIndex: 1 });
+    }).delegate('article.note', 'mouseenter', function(e) {
+        $(this).css({ zIndex: 1 }).children('input.btnX').fadeIn(1000);
+    }).delegate('article.note', 'mouseleave', function(e) {
+        $(this).css({ zIndex: 0 }).children('input.btnX').fadeOut(1000);
     });
 
-    //$('article').draggable().resizable();
-});
+});  //end doc ready

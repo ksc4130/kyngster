@@ -16,7 +16,8 @@
   "dependencies" : {
     "express": "2.5.7",
     "jade": ">= 0.0.1",
-    "socket.io": ">= 0.8.7"
+    "socket.io": ">= 0.8.7",
+    "mongoose": "*"
   },
   "noAnalyze": true,
   "license": "kyngster",
