@@ -1,107 +1,574 @@
 Express server listening on port NaN in development mode
 info: socket.io started
-debug: setting request GET /socket.io/1/xhr-polling/h49n57KiUOF7XWoDVNTr?t=1344616242718
+debug: setting request GET /socket.io/1/xhr-polling/7KublU4Wit7sbRX63-xD?t=1344624687656
 debug: setting poll timeout
 debug: clearing poll timeout
 debug: xhr-polling writing 7:::1+0
-debug: set close timeout for client h49n57KiUOF7XWoDVNTr
+debug: set close timeout for client 7KublU4Wit7sbRX63-xD
 warn: client not handshaken client should reconnect
 info: transport end (error)
-debug: cleared close timeout for client h49n57KiUOF7XWoDVNTr
+debug: cleared close timeout for client 7KublU4Wit7sbRX63-xD
 debug: discarding transport
 debug: discarding transport
 debug: xhr-polling received data packet 0::
 debug: got disconnection packet
 debug: client authorized
-info: handshake authorized GLsQHu40sEAKSuP2X6F4
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616244447
+info: handshake authorized un1v4DRttBFcHNAQ4MhG
+debug: setting request GET /socket.io/1/xhr-polling/un1v4DRttBFcHNAQ4MhG?t=1344624708556
 debug: setting poll timeout
 debug: client authorized for 
 debug: clearing poll timeout
 debug: xhr-polling writing 1::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616244481
+debug: set close timeout for client un1v4DRttBFcHNAQ4MhG
+debug: setting request GET /socket.io/1/xhr-polling/un1v4DRttBFcHNAQ4MhG?t=1344624708654
 debug: setting poll timeout
 debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616264527
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616284671
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616304735
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616324773
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616344819
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616364841
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616384872
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616404919
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: clearing poll timeout
-debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
-debug: xhr-polling closed due to exceeded duration
-debug: setting request GET /socket.io/1/xhr-polling/GLsQHu40sEAKSuP2X6F4?t=1344616424965
-debug: setting poll timeout
-debug: discarding transport
-debug: cleared close timeout for client GLsQHu40sEAKSuP2X6F4
+debug: cleared close timeout for client un1v4DRttBFcHNAQ4MhG
 debug: client authorized
-info: handshake authorized ANbrZJ9JUYudzDk8X6F5
+info: handshake authorized f-IBeVgOO-jG_UT34MhH
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized MVYiowmwaLoiGhs44MhI
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624720534
+debug: setting poll timeout
+debug: client authorized for 
+debug: clearing poll timeout
+debug: xhr-polling writing 1::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling received data packet �50�5:::{"name":"addNote","args":[{"id":0,"note":""}]}�54�5:::{"name":"updateNote","args":[{"id":0,"note":"d"}]}�60�5:::{"name":"drag","args":[{"id":0,"top":"","left":"50px"}]}�64�5:::{"name":"drag","args":[{"id":0,"top":"70px","left":"50px"}]}
+{ id: 0, note: '' }
+debug: broadcasting packet
+debug: clearing poll timeout
+debug: xhr-polling writing 5:::{"name":"addNote","args":[{"id":0,"note":""}]}
+debug: set close timeout for client un1v4DRttBFcHNAQ4MhG
+{ id: 0, note: 'd' }
+debug: broadcasting packet
+debug: broadcasting packet
+debug: broadcasting packet
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624720616
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"ds"}]}
+{ id: 0, note: 'ds' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsd"}]}
+{ id: 0, note: 'dsd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdf"}]}
+{ id: 0, note: 'dsdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfs"}]}
+{ id: 0, note: 'dsdfs' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsd"}]}
+{ id: 0, note: 'dsdfsd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsda"}]}
+{ id: 0, note: 'dsdfsda' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdag"}]}
+{ id: 0, note: 'dsdfsdag' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdagh"}]}
+{ id: 0, note: 'dsdfsdagh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghd"}]}
+{ id: 0, note: 'dsdfsdaghd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdf"}]}
+{ id: 0, note: 'dsdfsdaghdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfg"}]}
+{ id: 0, note: 'dsdfsdaghdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgd"}]}
+{ id: 0, note: 'dsdfsdaghdfgd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdf"}]}
+{ id: 0, note: 'dsdfsdaghdfgdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfg"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfgh"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfgh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghd"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdf"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfg"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfgh"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfgh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghn"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghn' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnf"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfd"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdf"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfg"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfgh"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfgh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghd"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdf"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfg"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfgh"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfgh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghd"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdf"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfg"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfgh"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfgh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghd"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdf"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfg"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfgh"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfgh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghd"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdf"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfd"}]}
+{ id: 0, note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfda"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfda' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdas"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdas' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfk"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfk' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,as"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,as' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,ask"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,ask' }
+debug: broadcasting packet
 debug: clearing poll timeout
 debug: xhr-polling writing 8::
-debug: set close timeout for client GLsQHu40sEAKSuP2X6F4
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
 debug: xhr-polling closed due to exceeded duration
-debug: fired close timeout for client GLsQHu40sEAKSuP2X6F4
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624740772
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askj"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askj' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfm"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfm' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmi"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmi' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmik"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmik' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmiko"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmiko' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikok"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikok' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokm"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokm' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokml"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokml' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlk"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlk' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkm"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkm' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkml"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkml' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmll"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmll' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllk"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllk' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllks"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllks' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllksk"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllksk' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskm"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskm' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmc"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmc' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcv"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcv' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;k"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;k' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;km"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;km' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmi"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmi' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmij"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmij' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijk"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijk' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkj"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkj' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjn"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjn' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsa"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsa' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsad"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsad' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkj"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkj' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjj"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjj' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjk"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjk' }
+debug: broadcasting packet
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624760913
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: fired close timeout for client un1v4DRttBFcHNAQ4MhG
 info: transport end (close timeout)
 debug: discarding transport
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624780991
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624801069
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624821145
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624841213
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624861300
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624881378
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624901473
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624921577
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624941642
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624961782
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjk"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjk' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjk"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjk' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfh"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhs"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhs' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfg"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhg"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhg"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgs"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgs' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdg"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdgh"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdgh' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghs"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghs' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfs"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfs' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfg"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfg' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfgs"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfgs' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfgsd"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfgsd' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfgsdf"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfgsdf' }
+debug: broadcasting packet
+debug: xhr-polling received data packet 5:::{"name":"updateNote","args":[{"id":0,"note":"dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfgsdfg"}]}
+{ id: 0,
+  note: 'dsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkdsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfddsdfsdaghdfgdfghdfghnfdfghdfghdfghdfghdfdasdfkc,askjfmikokmlkmllkskmcvo;kmijkjnsadflgkjjkcvo;kmijkjnsadflgkjjkfhsdfgdfhgdfhgsdghsfsdfgsdfg' }
+debug: broadcasting packet
+debug: clearing poll timeout
+debug: xhr-polling writing 8::
+debug: set close timeout for client MVYiowmwaLoiGhs44MhI
+debug: xhr-polling closed due to exceeded duration
+debug: setting request GET /socket.io/1/xhr-polling/MVYiowmwaLoiGhs44MhI?t=1344624981861
+debug: setting poll timeout
+debug: discarding transport
+debug: cleared close timeout for client MVYiowmwaLoiGhs44MhI

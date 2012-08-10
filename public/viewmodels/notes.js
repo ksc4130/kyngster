@@ -27,7 +27,25 @@ $(function() {
             },
             _cords = ko.observable(''),
             _addDrag = function(el) {
-                $(el).draggable().resizable({ alsoResize: $(el).children('textarea') }).children('intput.btnX').hide().removeClass('hidden');
+                $(el).draggable().resizable({
+                    alsoResize: $(el).children('textarea')
+                }).children('intput.btnX').hide().removeClass('hidden');
+
+                $(el).children('textarea.note').keyup(function() {
+                    //maybe figure this with the font size included*************???????????
+                    var fonSizCalc = parseInt($(this).css('font-size')) * .47,
+                        len = $(this).val().length,
+                        totalWidth = $(this).width() - parseInt($(this).css('margin-left'));
+                        linesNeeded = (len / (totalWidth / fonSizCalc)),
+                        numOfLines = $(this).height() / parseInt($(this).css('line-height'));
+                    //console.log(totalWidth);
+                    //console.log('fonsizcalc: ' + fonSizCalc + ' linesNeeded: ' + linesNeeded + ' numLines: ' + numOfLines + ' len: ' + len);
+
+                    if(linesNeeded > numOfLines) {
+                        //console.log('grow');
+                        $(this).animate({ height: "+=5px", width: "+=5px" }, 500).parent().animate({ height: "+=5px", width: "+=5px" }, 500);
+                    }
+                });
             },
             _note = function(note) {
                 var self = this;
@@ -110,4 +128,4 @@ $(function() {
         $(this).css({ zIndex: 0 }).children('input.btnX').fadeOut(1000);
     });
 
-});  //end doc ready
+});           //end doc ready
