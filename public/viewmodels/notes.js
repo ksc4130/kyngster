@@ -18,7 +18,7 @@ $(function() {
     var vm = function() {
         var _notes = ko.observableArray([]),
             _addNote = function(note) {
-                if(note) {
+                if(note && note.note && note.note._id) {
                     _notes.push(new _note(note));
                 }
                 else {

@@ -31,7 +31,7 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 
-app.listen(process.env.port || 80);
+app.listen(process.env.port || 3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
 
@@ -169,7 +169,7 @@ io.sockets.on('connection', function(socket) {
 
             var noteModel = db.model('note', noteSchema);
 
-            noteModel.remove({_id: note.id}, function(err) {
+            noteModel.remove({_id: note._id}, function(err) {
                 socket.emit('removeNote', note);
                 socket.broadcast.emit('removeNote', note);
             });
