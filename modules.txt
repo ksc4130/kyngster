@@ -1,0 +1,8 @@
+npm install express
+npm explore 'mod'
+npm congif set viewer  browser
+npm help 'mod'
+npm list
+
+underscore
+optimist

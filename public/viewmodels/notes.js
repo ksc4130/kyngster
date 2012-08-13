@@ -18,61 +18,95 @@ $(function() {
     var vm = function() {
         var _notes = ko.observableArray([]),
             _addNote = function(note) {
-                if(note.note) {
-                    _notes.push(new _note(note.note));
+                if(note) {
+                    _notes.push(new _note(note));
                 }
                 else {
-                    _notes.push(new _note());
+                    var n = new _note();
                 }
             },
-            _cords = ko.observable(''),
+
             _addDrag = function(el) {
+                var koDataEl = ko.dataFor(el);
+
                 $(el).draggable().resizable({
                     alsoResize: $(el).children('textarea')
-                }).children('intput.btnX').hide().removeClass('hidden');
-
+                }).bind('resize', function() {
+                    console.log('resize');
+                })
+                .bind('mousedown', function(e) {
+                    $(this).mousemove(function() {
+                        koDataEl.left($(this).css('left'));
+                        koDataEl.top($(this).css('top'));
+                        socket.emit('drag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
+                        console.log('left ' + koDataEl.left());
+                    });
+                    $(this).mouseup(function() {
+                    	socket.emit('updateDrag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
+                    });
+                }).bind('mouseenter', function(e) {
+                    $(this).css({ zIndex: 1 }).children('input.btnX').fadeIn(750);
+                }).bind('mouseleave', function(e) {
+                    $(this).css({ zIndex: 0 }).children('input.btnX').fadeOut(750);
+                })
+                .children('intput.btnX')
+                .hide()
+                .removeClass('hidden');
                 $(el).children('textarea.note').keyup(function() {
-
-
-                    //maybe figure this with the font size included*************???????????
-                    //var fonSizCalc = parseInt($(this).css('font-size')) * .47,
-                    //len = $(this).val().length,
-                    //totalWidth = $(this).width() - parseInt($(this).css('margin-left'));
-                    //linesNeeded = (len / (totalWidth / fonSizCalc)),
-                    //numOfLines = $(this).height() / parseInt($(this).css('line-height'));
-                    //console.log(totalWidth);
-                    //console.log('fonsizcalc: ' + fonSizCalc + ' linesNeeded: ' + linesNeeded + ' numLines: ' + numOfLines + ' len: ' + len);
-
-                    //if(linesNeeded > numOfLines) {
-                    //console.log('grow');
-                    //$(this).animate({ height: "+=5px", width: "+=5px" }, 500).parent().animate({ height: "+=5px", width: "+=5px" }, 500);
-                    //}
+                	socket.emit('updateNoteEmitOnly', { _id: koDataEl._id, note: $(this).val() });
                 });
+
+                if(koDataEl.top() > 0) {
+                    $(el).css({ top: koDataEl.top() });
+                }
+
+                if(koDataEl.left() > 0) {
+                    $(el).css({ left: koDataEl.left() });
+                }
+
+                if(koDataEl.width() > 0) {
+                    $(el).css({ width: koDataEl.width() });
+                }
+
+                if(koDataEl.height() > 0) {
+                    $(el).css({ height: koDataEl.height() });
+                }
             },
             _note = function(note) {
+                console.log(note);
+                if(note) {
+                    if(note._id) {
+                        console.log(note.id);
+                    }
+                    if(note.note) {
+                        console.log(note.note);
+                    }
+                    if(note.left) {
+                        console.log(note.left);
+                    }
+                    if(note.top) {
+                        console.log(note.top);
+                    }
+                }
                 var self = this;
-                self.id = (note && !typeof (note.note) == 'undefined') ? note.note.id : _notes().length;
-                self.note = (note && !typeof (note.note) == 'undefined') ? ko.observable(note.note.note) : ko.observable('');
+                self._id = (note && note.note && note.note._id) ? note.note._id : _notes().length;
+                self.note = (note && note.note && note.note.note) ? ko.observable(note.note.note) : ko.observable('');
+                self.left = (note && note.note && note.note.left) ? ko.observable(note.note.left) : ko.observable(50);
+                self.top = (note && note.note && note.note.top) ? ko.observable(note.note.top) : ko.observable(100);
+                self.width = (note && note.note && note.note.width) ? ko.observable(note.note.width) : ko.observable(220);
+                self.height = (note && note.note && note.note.height) ? ko.observable(note.note.height) : ko.observable(220);
+
                 self.beingUpdated = ko.observable(false);
                 self.remove = function() {
                     _notes.remove(self);
-                    socket.emit('removeNote', { id: self.id });
+                    socket.emit('removeNote', { _id: self._id });
                 };
-                self.left = ko.observable('');
-                self.top = ko.observable('');
-                self.top.subscribe(function() {
-                    socket.emit('drag', { id: self.id, top: self.top(), left: self.left() });
-                });
-                self.left.subscribe(function() {
-                    socket.emit('drag', { id: self.id, top: self.top(), left: self.left() });
-                });
+
                 self.note.subscribe(function() {
-                    if(!self.beingUpdated()) {
-                        socket.emit('updateNote', { id: self.id, note: self.note() });
-                    }
+                	socket.emit('updateNote', { _id: self._id, note: self.note() });
                 });
                 if(!note || typeof (note.note) == 'undefined') {
-                    socket.emit('addNote', { id: self.id, note: self.note() });
+                    socket.emit('addNote', { _id: self._id, note: self.note(), left: self.left(), top: self.top(), width: self.width(), height: self.height() });
                 }
 
             };
@@ -80,7 +114,6 @@ $(function() {
         return {
             notes: _notes,
             addNote: _addNote,
-            cords: _cords,
             addDrag: _addDrag
         }
     } ();
@@ -88,19 +121,35 @@ $(function() {
 
     var socket = io.connect();
 
+    socket.emit('getStuff', {});
+
     socket.on('msg', function(r) {
         alert(r.msg);
     });
 
+    socket.on('notes', function(notes) {
+        console.log('notes');
+        $.each(notes, function(i, note) {
+            vm.addNote({ note: note });
+        });
+    });
+
     socket.on('drag', function(drag) {
-        var $el = $('#' + drag.id);
+        console.log('drag ' + drag.id);
+        var $el = $('#' + drag._id),
+            el = document.getElementById(drag._id);
         if($el) {
             $el.css({ left: drag.left, top: drag.top });
+            ko.dataFor(el).left(drag.left);
+            ko.dataFor(el).top(drag.top);
+            ko.dataFor(el).width(drag.width);
+            ko.dataFor(el).height(drag.height);
         }
     });
 
     socket.on('updateNote', function(note) {
-        var el = document.getElementById(note.id);
+    	console.log(note._id + ' note ' + note.note);
+        var el = document.getElementById(note._id);
 
         if(el) {
             ko.dataFor(el).beingUpdated(true);
@@ -114,20 +163,8 @@ $(function() {
     });
 
     socket.on('removeNote', function(note) {
-        var el = document.getElementById(note.id);
+        var el = document.getElementById(note._id);
         ko.dataFor(el).remove();
-    });
-
-    $('body').delegate('article.note', 'mousedown', function(e) {
-        $(this).mousemove(function() {
-            vm.cords('left: ' + $(this).css('left') + ' top: ' + $(this).css('top'));
-            ko.dataFor(this).left($(this).css('left'));
-            ko.dataFor(this).top($(this).css('top'));
-        });
-    }).delegate('article.note', 'mouseenter', function(e) {
-        $(this).css({ zIndex: 1 }).children('input.btnX').fadeIn(1000);
-    }).delegate('article.note', 'mouseleave', function(e) {
-        $(this).css({ zIndex: 0 }).children('input.btnX').fadeOut(1000);
     });
 
     $('body').delegate('article.note textarea.note', 'overflow', function(e) {
@@ -143,4 +180,4 @@ $(function() {
     });
 
 
-});                   //end doc ready
+});                           //end doc ready
