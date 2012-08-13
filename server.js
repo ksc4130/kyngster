@@ -31,7 +31,7 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 
-app.listen(process.env.port || 3000);
+app.listen(process.env.port || 80);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
 
@@ -60,14 +60,14 @@ var mongoose = require('mongoose'),
                         height: Number,
                         note: String
                     });
-                    
-            
+
+
 
 io.sockets.on('connection', function(socket) {
     //socket.emit('msg', { msg: 'Welcome' });
 
     socket.on('getStuff', function() {
-        
+
         console.log('getStuff');
 
             var noteModel = db.model('note', noteSchema);
@@ -79,14 +79,14 @@ io.sockets.on('connection', function(socket) {
                 else {
                 	socket.emit('notes',found);
                 }
-            
+
        });
     });
 
     socket.on('drag', function(noteIn) {
         socket.broadcast.emit('drag', noteIn);
     });
-    
+
     socket.on('updateDrag', function(noteIn) {
                 var noteModel = db.model('note', noteSchema);
                 noteModel.findOne({ _id: noteIn._id }, function (err, note) {
@@ -112,7 +112,7 @@ io.sockets.on('connection', function(socket) {
                     }
 
                 });
-            
+
     });
 
     socket.on('updateNote', function(noteIn) {
@@ -134,9 +134,9 @@ io.sockets.on('connection', function(socket) {
                         }
                     });
                 });
-            
+
         });
-        
+
     socket.on('updateNoteEmitOnly', function(noteIn) {
     	socket.broadcast.emit('updateNote', noteIn);
     });
@@ -175,5 +175,5 @@ io.sockets.on('connection', function(socket) {
             });
 
         });
-    
+
 });
