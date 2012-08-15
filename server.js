@@ -63,7 +63,7 @@ var mongo = require('mongojs'),
         databaseUrl = 'test',
         collections = ['notes', 'workspaces'],
         db = mongo.connect(databaseUrl, collections),
-        var ObjectId = mongo.ObjectId;;
+        ObjectId = mongo.ObjectId;;
 
 io.sockets.on('connection', function(socket) {
     //socket.emit('msg', { msg: 'Welcome' });
