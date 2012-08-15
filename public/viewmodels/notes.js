@@ -29,8 +29,11 @@ $(function() {
             _addDrag = function(el) {
                 var koDataEl = ko.dataFor(el);
 
+                //getElementById('YourDiv').contentEditable = true;
+                $(el).children('div.note')[0].contentEditable = true;
+
                 $(el).draggable().resizable({
-                    alsoResize: $(el).children('textarea.note')
+                    alsoResize: $(el).children('div.note')
                 }).bind('resize', function() {
                     //add resize here ***********************
                 })
@@ -51,7 +54,7 @@ $(function() {
                 .children('intput.btnX')
                 .hide()
                 .removeClass('hidden');
-                $(el).children('textarea.note').keyup(function() {
+                $(el).children('div.note').keyup(function() {
                 	socket.emit('updateNoteEmitOnly', { _id: koDataEl._id, note: $(this).val() });
                 });
 
