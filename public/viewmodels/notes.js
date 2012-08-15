@@ -144,6 +144,12 @@ $(function() {
         var $el = $('#' + size._id),
             el = document.getElementById(size._id);
         if($el) {
+            $(el).children('textarea.note').css({   width: size.width - 40,
+                                                    'margin-left': 20,
+                                                    height: size.height - 40,
+                                                    'margin-top': 20
+                                                });
+
             $el.css({ width: size.width, height: size.height });
             ko.dataFor(el).width(size.width);
             ko.dataFor(el).height(size.height);
