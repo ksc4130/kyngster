@@ -32,7 +32,7 @@ $(function() {
                 $(el).draggable().resizable({
                     alsoResize: $(el).children('textarea.note'),
                     stop: function(e, el) {
-                        socket.emit('updateSize', { _id: koDataEl._id, parseInt(width:koDataEl.width()), height: parseInt(koDataEl.height()) });
+                        socket.emit('updateSize', { _id: koDataEl._id, width: parseInt(koDataEl.width()), height: parseInt(koDataEl.height()) });
                     }
                 }).bind('resize', function() {
                     koDataEl.resizable(false);
