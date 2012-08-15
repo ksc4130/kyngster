@@ -85,8 +85,11 @@ $(function() {
                 self.beingUpdated = ko.observable(false);
 
                 self.remove = function() {
-                    _notes.remove(self);
                     socket.emit('removeNote', { _id: self._id });
+                };
+
+                self.commitRemove = function() {
+                    _notes.remove(self);
                 };
 
                 self.note.subscribe(function() {
@@ -116,6 +119,7 @@ $(function() {
 
     socket.on('notes', function(notes) {
         $.each(notes, function(i, note) {
+            console.log(note);
             vm.addNote({ note: note });
         });
     });
@@ -149,7 +153,7 @@ $(function() {
     socket.on('removeNote', function(note) {
         var el = document.getElementById(note._id);
         if(el && ko.dataFor(el)) {
-           ko.dataFor(el).remove();
+           ko.dataFor(el).commitRemove();
         }
 
     });

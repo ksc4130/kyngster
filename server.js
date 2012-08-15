@@ -61,7 +61,7 @@ io.set('transports', [
 
 var mongo = require('mongojs'),
         databaseUrl = 'test',
-        collections = ['notes', 'workspaces'],
+        collections = ['notes'],
         db = mongo.connect(databaseUrl, collections),
         ObjectId = mongo.ObjectId;;
 
