@@ -5,7 +5,7 @@ var express = require('express'),
 
 s.get('*', function(req, res) {
   console.log(req.subdomains);
-  req.pipe(request('http://localhost:4130')).pipe(res);
+  req.pipe(request('http://localhost:3000')).pipe(res);
 });
 
 s.listen(80);
