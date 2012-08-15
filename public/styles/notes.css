@@ -72,7 +72,6 @@ body article.note {
   /*background-color: #ac8586; */
 
   background-color: rgba(192, 235, 150, 0.8);
-  overflow: hidden;
 }
 body article.note textarea.note {
   font-family: arial;
