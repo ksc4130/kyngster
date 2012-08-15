@@ -4,6 +4,7 @@
  */
 
 var express = require('express'),
+    http = require('http'),
     routes = require('./routes'),
     path = require('path');
 
