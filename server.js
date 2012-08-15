@@ -37,12 +37,12 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 
-app.listen(app.get('port'));
-console.log("Express server listening on port %d in %s mode", app.get('port'), app.settings.env);
-
+var s = http.createServer(app).listen(app.get('port'), function(){
+  console.log("Express server listening on port " + app.get('port'));
+});
 
 //io
-var io = require('socket.io').listen(app);
+var io = require('socket.io').listen(s);
 
 io.enable('browser client minification');
 io.enable('browser client etag');
