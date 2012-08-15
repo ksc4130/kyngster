@@ -86,9 +86,6 @@ $(function() {
 
                 self.remove = function() {
                     _notes.remove(self);
-                };
-
-                self.startRemove = function(){
                     socket.emit('removeNote', { _id: self._id });
                 };
 
@@ -151,7 +148,10 @@ $(function() {
 
     socket.on('removeNote', function(note) {
         var el = document.getElementById(note._id);
-        ko.dataFor(el).remove();
+        if(el && ko.dataFor(el)) {
+           ko.dataFor(el).remove();
+        }
+
     });
 
     // $('body').delegate('article.note textarea.note', 'overflow', function(e) {

@@ -143,7 +143,7 @@ io.sockets.on('connection', function(socket) {
                 console.log('Remove note error: ' + err);
             }
             else if(!note) {
-                console.log('Add note failed without error');
+                console.log('Remove note failed without error');
             }
             else {
                 console.log('Good note removal by ' + socket.handshake.address.address);
