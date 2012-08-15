@@ -1,7 +1,8 @@
 var express = require('express'),
 	http = require('http'),
-	request = require('request'),
-	s = express();
+	request = require('request');
+
+var s = express();
 
 s.get('*', function(req, res) {
   console.log(req.subdomains);
