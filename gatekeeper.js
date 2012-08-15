@@ -2,7 +2,7 @@ var express = require('express'),
 	http = require('http'),
 	request = require('request');
 
-var s = express();
+var s = express.createServer();
 
 s.get('*', function(req, res) {
   console.log(req.subdomains);
