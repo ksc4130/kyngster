@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "author": "kyngster.com",
   "description": "Notes",
-  "contributors": [ 
+  "contributors": [
     {
       "name": "Kyle Curren",
       "email": "c4130@gmail.com"
-    } 
-  ],  
-  "main": "./server.js",  
+    }
+  ],
+  "main": "./server.js",
   "keywords": [
     "notes"
   ],
@@ -17,7 +17,8 @@
     "express": "2.5.7",
     "jade": ">= 0.0.1",
     "socket.io": ">= 0.8.7",
-    "mongoose": "*"
+    "mongoose": "*",
+    "request": "*"
   },
   "noAnalyze": true,
   "license": "kyngster",
