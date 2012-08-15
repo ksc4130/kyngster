@@ -30,9 +30,13 @@ $(function() {
                 var koDataEl = ko.dataFor(el);
 
                 $(el).draggable().resizable({
-                    alsoResize: $(el).children('textarea.note')
+                    alsoResize: $(el).children('textarea.note'),
+                    stop: function(e, el) {
+                        socket.emit('updateSize', { _id: koDataEl._id, parseInt(width:koDataEl.width()), height: parseInt(koDataEl.height()) });
+                    }
                 }).bind('resize', function() {
                     koDataEl.resizable(false);
+                    socket.emit('size', { _id: koDataEl._id, width: parseInt(koDataEl.width()), height: parseInt(koDataEl.height()) });
                 })
                 .bind('mousedown', function(e) {
                     $(this).mousemove(function() {
@@ -131,6 +135,14 @@ $(function() {
             $el.css({ left: drag.left, top: drag.top });
             ko.dataFor(el).left(drag.left);
             ko.dataFor(el).top(drag.top);
+        }
+    });
+
+    socket.on('size', function(size) {
+        var $el = $('#' + drag._id),
+            el = document.getElementById(drag._id);
+        if($el) {
+            $el.css({ width: size.width, height: size.height });
             ko.dataFor(el).width(drag.width);
             ko.dataFor(el).height(drag.height);
         }

@@ -101,6 +101,25 @@ io.sockets.on('connection', function(socket) {
         });
     });
 
+    socket.on('size', function(noteIn) {
+        socket.broadcast.emit('size', noteIn);
+    });
+
+    socket.on('updateSize', function(noteIn) {
+        console.log(sys.inspect(noteIn));
+        db.notes.update({ _id: ObjectId(noteIn._id) }, {$set: { width: noteIn.width, height: noteIn.height }}, function(err, note) {
+            if (err) {
+                console.log('Size update error: ' + err);
+            }
+            else if(!note) {
+                console.log('Size update failed without error');
+            }
+            else {
+                console.log('Good size update by ' + socket.handshake.address.address);
+            }
+        });
+    });
+
     socket.on('updateNote', function(noteIn) {
         db.notes.update({ _id: ObjectId(noteIn._id) }, {$set: { note: noteIn.note }}, function(err, note) {
             if (err) {
