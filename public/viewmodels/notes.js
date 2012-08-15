@@ -29,8 +29,6 @@ $(function() {
             _addDrag = function(el) {
                 var koDataEl = ko.dataFor(el);
 
-                //getElementById('YourDiv').contentEditable = true;
-
                 $(el).draggable().resizable({
                     alsoResize: $(el).children('textarea.note')
                 }).bind('resize', function() {
@@ -45,9 +43,9 @@ $(function() {
                     $(this).mouseup(function() {
                     	socket.emit('updateDrag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
                     });
-                }).bind('mouseenter', function(e) {
+                }).bind('mouseover', function(e) {
                     $(this).css({ zIndex: 1 }).children('input.btnX').fadeIn(750);
-                }).bind('mouseleave', function(e) {
+                }).bind('mouseout', function(e) {
                     $(this).css({ zIndex: 0 }).children('input.btnX').fadeOut(750);
                 })
                 .children('intput.btnX')
@@ -97,7 +95,6 @@ $(function() {
                 	socket.emit('updateNote', { _id: self._id, note: self.note() });
                 });
                 if(!note || (note && !note._id)) {
-                    console.log('add');
                     socket.emit('addNote', { _id: self._id, note: self.note(), left: self.left(), top: self.top(), width: self.width(), height: self.height() });
                 }
 
@@ -121,7 +118,6 @@ $(function() {
 
     socket.on('notes', function(notes) {
         $.each(notes, function(i, note) {
-            console.log(note);
             vm.addNote(note);
         });
     });
@@ -170,9 +166,11 @@ $(function() {
         }
     });
 
-    //$('body').delegate('article.note textarea.note', 'overflow', function(e) {
-        //$(this).animate({ height: "-=5px", width: "-=5px" }, 500).parent().animate({ height: "+=5px", width: "+=5px" }, 500);
-    //});
+    $('body').delegate('article.note textarea.note', 'underflow', function(e) {
+         if(!ko.dataFor(this).resizable()) {
+            ko.dataFor(this).resizable(true);
+         }
+    });
 
 
 });//end doc ready
