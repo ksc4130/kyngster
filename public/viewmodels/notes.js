@@ -30,7 +30,6 @@ $(function() {
                 var koDataEl = ko.dataFor(el);
 
                 //getElementById('YourDiv').contentEditable = true;
-                $(el).children('div.note')[0].contentEditable = true;
 
                 $(el).draggable().resizable({
                     alsoResize: $(el).children('div.note')
@@ -84,8 +83,12 @@ $(function() {
                 self.height = (note && note.height) ? ko.observable(note.height) : ko.observable(220);
 
                 self.beingUpdated = ko.observable(false);
+
                 self.remove = function() {
                     _notes.remove(self);
+                };
+
+                self.startRemove = function(){
                     socket.emit('removeNote', { _id: self._id });
                 };
 

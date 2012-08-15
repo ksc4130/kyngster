@@ -14,7 +14,7 @@ html
 		// ko template: { name: 'note-template', foreach: notes, afterAdd: addDrag}
 		// /ko
 
-|   <script type="text/html" id="note-template"><article class="note" data-bind="attr: { 'id': _id }"><input class="btnX hidden" data-bind="click: remove" type="button" value="X" /><div class="note" data-bind="text: note"></div></article></script>
+|   <script type="text/html" id="note-template"><article class="note" data-bind="attr: { 'id': _id }"><input class="btnX hidden" data-bind="click: startRemove" type="button" value="X" /><div class="note" data-bind="text: note" contenteditable="true"></div></article></script>
 
 script(src='/scripts/libs/jquery-1.7.2.min.js')
 script(src='/scripts/libs/jquery-ui-1.8.22.custom.min.js')
