@@ -45,7 +45,7 @@ $(function() {
                     });
                 }).bind('mouseenter', function(e) {
                     if($(this).children('input.btnX').hasClass('hidden')){
-                        $(this).hide().removeClass('hidden');
+                        $(this).children('input.btnX').hide().removeClass('hidden');
                     }
                     $(this).css({ zIndex: 1 }).stop().children('input.btnX').stop().fadeIn(250);
                 }).bind('mouseleave', function(e) {
