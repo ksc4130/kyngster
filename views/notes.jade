@@ -1,15 +1,23 @@
-link(rel='stylesheet', href='/styles/notes.css')
+!!! 5
+html
+	head
+    	title= title
+		link(rel='stylesheet', href='/styles/notes.css')
+		link(rel='stylesheet', href='/styles/jquery-ui-1.8.22.custom.css')
+	body
+		header#controls.closed
+		    section#controls
+		        nav
+		            input(type="button", class="btn", value="Add Note", data-bind="click: addNote")
+		    section#btnControls
 
-header#controls.closed
-    section#controls
-        nav
-            input(type="button", class="btn", value="Add Note", data-bind="click: addNote")
-    section#btnControls
-
-// ko template: { name: 'note-template', foreach: notes, afterAdd: addDrag}
-// /ko
+		// ko template: { name: 'note-template', foreach: notes, afterAdd: addDrag}
+		// /ko
 
 |   <script type="text/html" id="note-template"><article class="note" data-bind="attr: { 'id': _id }"><input class="btnX hidden" data-bind="click: remove" type="button" value="X" /><textarea class="note" data-bind="value: note"></textarea></article></script>
-    
+
+script(src='/scripts/libs/jquery-1.7.2.min.js')
+script(src='/scripts/libs/jquery-ui-1.8.22.custom.min.js')
+script(src='/scripts/libs/knockout-2.1.0.js')
 script(src='/socket.io/socket.io.js')
 script(src='/viewmodels/notes.js');
