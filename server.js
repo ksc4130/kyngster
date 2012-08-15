@@ -87,7 +87,6 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('updateDrag', function(noteIn) {
-        console.log(sys.inspect(noteIn));
         db.notes.update({ _id: ObjectId(noteIn._id) }, {$set: { top: noteIn.top, left: noteIn.left }}, function(err, note) {
             if (err) {
                 console.log('Drag update error: ' + err);
@@ -106,7 +105,6 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('updateSize', function(noteIn) {
-        console.log(sys.inspect(noteIn));
         db.notes.update({ _id: ObjectId(noteIn._id) }, {$set: { width: noteIn.width, height: noteIn.height }}, function(err, note) {
             if (err) {
                 console.log('Size update error: ' + err);
