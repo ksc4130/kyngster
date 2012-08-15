@@ -29,17 +29,19 @@ $(function() {
             _addDrag = function(el) {
                 var koDataEl = ko.dataFor(el);
 
+                var textareaWidth = $(el).children('div.scroll').children('textarea.note')[0].scrollWidth;
+                $(el).children('div.scroll')[0].style.width = textareaWidth + "px";
+
                 $(el).draggable().resizable({
-                    alsoResize: $(el).children('textarea')
+                    alsoResize: $(el).children('textarea.note')
                 }).bind('resize', function() {
-                    console.log('resize');
+                    //add resize here ***********************
                 })
                 .bind('mousedown', function(e) {
                     $(this).mousemove(function() {
                         koDataEl.left($(this).css('left'));
                         koDataEl.top($(this).css('top'));
                         socket.emit('drag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
-                        console.log('left ' + koDataEl.left());
                     });
                     $(this).mouseup(function() {
                     	socket.emit('updateDrag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
@@ -73,28 +75,13 @@ $(function() {
                 }
             },
             _note = function(note) {
-                console.log(note);
-                if(note) {
-                    if(note._id) {
-                        console.log(note.id);
-                    }
-                    if(note.note) {
-                        console.log(note.note);
-                    }
-                    if(note.left) {
-                        console.log(note.left);
-                    }
-                    if(note.top) {
-                        console.log(note.top);
-                    }
-                }
                 var self = this;
-                self._id = (note && note.note && note.note._id) ? note.note._id : _notes().length;
-                self.note = (note && note.note && note.note.note) ? ko.observable(note.note.note) : ko.observable('');
-                self.left = (note && note.note && note.note.left) ? ko.observable(note.note.left) : ko.observable(50);
-                self.top = (note && note.note && note.note.top) ? ko.observable(note.note.top) : ko.observable(100);
-                self.width = (note && note.note && note.note.width) ? ko.observable(note.note.width) : ko.observable(220);
-                self.height = (note && note.note && note.note.height) ? ko.observable(note.note.height) : ko.observable(220);
+                self._id = (note && note._id) ? note._id : _notes().length;
+                self.note = (note && note.note) ? ko.observable(note.note) : ko.observable('');
+                self.left = (note && note.left) ? ko.observable(note.left) : ko.observable(50);
+                self.top = (note && note.top) ? ko.observable(note.top) : ko.observable(100);
+                self.width = (note && note.width) ? ko.observable(note.width) : ko.observable(220);
+                self.height = (note && note.height) ? ko.observable(note.height) : ko.observable(220);
 
                 self.beingUpdated = ko.observable(false);
                 self.remove = function() {
@@ -128,14 +115,12 @@ $(function() {
     });
 
     socket.on('notes', function(notes) {
-        console.log('notes');
         $.each(notes, function(i, note) {
             vm.addNote({ note: note });
         });
     });
 
     socket.on('drag', function(drag) {
-        console.log('drag ' + drag.id);
         var $el = $('#' + drag._id),
             el = document.getElementById(drag._id);
         if($el) {
@@ -148,7 +133,6 @@ $(function() {
     });
 
     socket.on('updateNote', function(note) {
-    	console.log(note._id + ' note ' + note.note);
         var el = document.getElementById(note._id);
 
         if(el) {
@@ -159,26 +143,25 @@ $(function() {
     });
 
     socket.on('addNote', function(note) {
-        vm.addNote({ note: note });
+        vm.addNote(note);
     });
 
     socket.on('removeNote', function(note) {
-        console.log(note._id);
         var el = document.getElementById(note._id);
         ko.dataFor(el).remove();
     });
 
-    $('body').delegate('article.note textarea.note', 'overflow', function(e) {
-        var toGrow = parseInt($(this).css('line-height'));
-        toGrow = toGrow / 2;
-        toGrow = toGrow + "px";
-        $(this).animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
-        $(this).parent().animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
-    });
+    // $('body').delegate('article.note textarea.note', 'overflow', function(e) {
+    //     var toGrow = parseInt($(this).css('line-height'));
+    //     toGrow = toGrow / 2;
+    //     toGrow = toGrow + "px";
+    //     $(this).animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
+    //     $(this).parent().animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
+    // });
 
-    $('body').delegate('article.note textarea.note', 'overflow', function(e) {
+    //$('body').delegate('article.note textarea.note', 'overflow', function(e) {
         //$(this).animate({ height: "-=5px", width: "-=5px" }, 500).parent().animate({ height: "+=5px", width: "+=5px" }, 500);
-    });
+    //});
 
 
-});                           //end doc ready
+});//end doc ready
