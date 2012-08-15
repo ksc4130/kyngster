@@ -34,7 +34,7 @@ $(function() {
                 $(el).draggable().resizable({
                     alsoResize: $(el).children('textarea.note')
                 }).bind('resize', function() {
-                    //add resize here ***********************
+                    koDataEl.resizable(false);
                 })
                 .bind('mousedown', function(e) {
                     $(this).mousemove(function() {
@@ -83,6 +83,7 @@ $(function() {
                 self.height = (note && note.height) ? ko.observable(note.height) : ko.observable(220);
 
                 self.beingUpdated = ko.observable(false);
+                self.resizable = ko.observable(true);
 
                 self.remove = function() {
                     socket.emit('removeNote', { _id: self._id });
@@ -159,13 +160,15 @@ $(function() {
 
     });
 
-    // $('body').delegate('article.note textarea.note', 'overflow', function(e) {
-    //     var toGrow = parseInt($(this).css('line-height'));
-    //     toGrow = toGrow / 2;
-    //     toGrow = toGrow + "px";
-    //     $(this).animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
-    //     $(this).parent().animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
-    // });
+    $('body').delegate('article.note textarea.note', 'overflow', function(e) {
+        if(ko.dataFor(this).resizable()) {
+            var toGrow = parseInt($(this).css('line-height'));
+            toGrow = toGrow / 2;
+            toGrow = toGrow + "px";
+            $(this).animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
+            $(this).parent().animate({ height: "+=" + toGrow, width: "+=" + toGrow }, 400);
+        }
+    });
 
     //$('body').delegate('article.note textarea.note', 'overflow', function(e) {
         //$(this).animate({ height: "-=5px", width: "-=5px" }, 500).parent().animate({ height: "+=5px", width: "+=5px" }, 500);

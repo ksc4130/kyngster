@@ -70,11 +70,6 @@ body article.note {
 
   background-color: rgba(192, 235, 150, 0.8);
 }
-body article.note div.scroll {
-  height: 160px;
-  width: 160px;
-  overflow: hidden;
-}
 body article.note textarea.note {
   font-family: arial;
   font-size: 15px;
@@ -84,7 +79,6 @@ body article.note textarea.note {
   width: 160px;
   border: 0;
   resize: none;
-  overflow-y: scroll;
   background-color: transparent;
 }
 body article.note input.btnX {
