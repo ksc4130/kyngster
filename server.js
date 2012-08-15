@@ -148,7 +148,7 @@ io.sockets.on('connection', function(socket) {
             else {
                 console.log('Good note removal by ' + socket.handshake.address.address);
                 socket.emit('removeNote', noteIn);
-                socket.broadcast.emit('removeNote', noteId);
+                socket.broadcast.emit('removeNote', noteIn);
             }
         });
     });
