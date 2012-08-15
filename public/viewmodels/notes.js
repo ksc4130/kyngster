@@ -163,6 +163,7 @@ $(function() {
     });
 
     socket.on('removeNote', function(note) {
+        console.log(note._id);
         var el = document.getElementById(note._id);
         ko.dataFor(el).remove();
     });

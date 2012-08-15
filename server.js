@@ -142,10 +142,13 @@ io.sockets.on('connection', function(socket) {
             if(err) {
                 console.log('Remove note error: ' + err);
             }
+            else if(!note) {
+                console.log('Add note failed without error');
+            }
             else {
                 console.log('Good note removal by ' + socket.handshake.address.address);
-                socket.emit('removeNote', note);
-                socket.broadcast.emit('removeNote', note);
+                socket.emit('removeNote', noteIn);
+                socket.broadcast.emit('removeNote', noteId);
             }
         });
     });
