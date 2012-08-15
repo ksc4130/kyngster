@@ -44,13 +44,13 @@ $(function() {
                     	socket.emit('updateDrag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
                     });
                 }).bind('mouseenter', function(e) {
+                    if($(this).children('input.btnX').hasClass('hidden')){
+                        $(this).hide().removeClass('hidden');
+                    }
                     $(this).css({ zIndex: 1 }).stop().children('input.btnX').stop().fadeIn(250);
                 }).bind('mouseleave', function(e) {
                     $(this).css({ zIndex: 0 }).stop().children('input.btnX').stop().fadeOut(250);
-                })
-                .children('intput.btnX')
-                .hide()
-                .removeClass('hidden');
+                });
                 $(el).children('textarea.note').keyup(function() {
                 	socket.emit('updateNoteEmitOnly', { _id: koDataEl._id, note: $(this).val() });
                 });
