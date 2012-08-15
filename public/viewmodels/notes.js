@@ -139,12 +139,12 @@ $(function() {
     });
 
     socket.on('size', function(size) {
-        var $el = $('#' + drag._id),
-            el = document.getElementById(drag._id);
+        var $el = $('#' + size._id),
+            el = document.getElementById(size._id);
         if($el) {
             $el.css({ width: size.width, height: size.height });
-            ko.dataFor(el).width(drag.width);
-            ko.dataFor(el).height(drag.height);
+            ko.dataFor(el).width(size.width);
+            ko.dataFor(el).height(size.height);
         }
     });
 
