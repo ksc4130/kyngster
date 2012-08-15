@@ -36,6 +36,8 @@ $(function() {
                     }
                 }).bind('resize', function() {
                     koDataEl.resizable(false);
+                    koDataEl.width($(this).css('width'));
+                    koDataEl.height($(this).css('height'));
                     socket.emit('size', { _id: koDataEl._id, width: parseInt(koDataEl.width()), height: parseInt(koDataEl.height()) });
                 })
                 .bind('mousedown', function(e) {
