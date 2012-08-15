@@ -111,7 +111,7 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('addNote', function(noteIn) {
-
+        note._id = null;
         db.notes.save(noteIn, function(err, note) {
             if(err) {
                 console.log('Add note error: ' + err);
