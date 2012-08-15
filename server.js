@@ -66,16 +66,15 @@ var mongo = require('mongojs'),
 io.sockets.on('connection', function(socket) {
     //socket.emit('msg', { msg: 'Welcome' });
 
+    console.log(socket.handshake.address.address + ' connected');
+
     socket.on('getStuff', function() {
-
-        console.log('getStuff');
-
         db.notes.find({}, function(err, found) {
-            console.log('in find');
             if(err) {
-            	console.log(err);
+            	console.log('getStuff error: ' + err);
             }
             else {
+                console.log('Good getStuff by ' + socket.handshake.address.address);
             	socket.emit('notes',found);
             }
        });
@@ -91,7 +90,7 @@ io.sockets.on('connection', function(socket) {
                 console.log('Drag update error: ' + err);
             }
             else {
-                console.log('Good drag update by ' + socket.handshake.address);
+                console.log('Good drag update by ' + socket.handshake.address.address);
             }
         });
     });
@@ -102,7 +101,7 @@ io.sockets.on('connection', function(socket) {
                 console.log('Note update error: ' + err);
             }
             else {
-                console.log('Good note update by ' + socket.handshake.address);
+                console.log('Good note update by ' + socket.handshake.address.address);
             }
         });
     });
@@ -118,7 +117,7 @@ io.sockets.on('connection', function(socket) {
                 console.log('Add note error: ' + err);
             }
             else {
-                console.log('Good note add by ' + socket.handshake.address);
+                console.log('Good note add by ' + socket.handshake.address.address);
                 socket.emit('addNote', note);
                 socket.broadcast.emit('addNote', note);
             }
@@ -131,7 +130,7 @@ io.sockets.on('connection', function(socket) {
                 console.log('Remove note error: ' + err);
             }
             else {
-                console.log('Good note removal by ' + socket.handshake.address);
+                console.log('Good note removal by ' + socket.handshake.address.address);
                 socket.emit('removeNote', note);
                 socket.broadcast.emit('removeNote', note);
             }
