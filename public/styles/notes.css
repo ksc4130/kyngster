@@ -74,7 +74,8 @@ body article.note textarea.note {
   font-family: arial;
   font-size: 15px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   height: 160px;
   width: 160px;
   border: 0;
