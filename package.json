@@ -14,9 +14,9 @@
     "notes"
   ],
   "dependencies" : {
-    "express": "2.5.7",
-    "jade": ">= 0.0.1",
-    "socket.io": ">= 0.8.7",
+    "express": "3.0.0rc3",
+    "jade": "*",
+    "socket.io": "*",
     "mongoose": "*",
     "request": "*"
   },
