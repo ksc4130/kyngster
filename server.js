@@ -62,7 +62,8 @@ io.set('transports', [
 var mongo = require('mongojs'),
         databaseUrl = 'test',
         collections = ['notes', 'workspaces'],
-        db = mongo.connect(databaseUrl, collections);
+        db = mongo.connect(databaseUrl, collections),
+        var ObjectId = mongo.ObjectId;;
 
 io.sockets.on('connection', function(socket) {
     //socket.emit('msg', { msg: 'Welcome' });
@@ -87,9 +88,12 @@ io.sockets.on('connection', function(socket) {
 
     socket.on('updateDrag', function(noteIn) {
         console.log(sys.inspect(noteIn));
-        db.notes.update({ _id: noteIn._id }, {$set: { top: noteIn.top, left: noteIn.left }}, function(err, note) {
+        db.notes.update({ _id: ObjectId(noteIn._id) }, {$set: { top: noteIn.top, left: noteIn.left }}, function(err, note) {
             if (err) {
                 console.log('Drag update error: ' + err);
+            }
+            else if(!note) {
+                console.log('Drag update failed without error');
             }
             else {
                 console.log('Good drag update by ' + socket.handshake.address.address);
@@ -98,9 +102,12 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('updateNote', function(noteIn) {
-        db.notes.update({ _id: noteIn._id }, {$set: { note: noteIn.note }}, function(err, note) {
+        db.notes.update({ _id: ObjectId(noteIn._id) }, {$set: { note: noteIn.note }}, function(err, note) {
             if (err) {
                 console.log('Note update error: ' + err);
+            }
+            else if(!note) {
+                console.log('Note update failed without error');
             }
             else {
                 console.log('Good note update by ' + socket.handshake.address.address);
@@ -119,6 +126,9 @@ io.sockets.on('connection', function(socket) {
             if(err) {
                 console.log('Add note error: ' + err);
             }
+            else if(!note) {
+                console.log('Add note failed without error');
+            }
             else {
                 console.log('Good note add by ' + socket.handshake.address.address);
                 socket.emit('addNote', note);
@@ -128,7 +138,7 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('removeNote', function(noteIn) {
-        db.notes.remove({ _id: noteIn._id }, function(err, note) {
+        db.notes.remove({ _id: ObjectId(noteIn._id) }, function(err, note) {
             if(err) {
                 console.log('Remove note error: ' + err);
             }
