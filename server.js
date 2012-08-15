@@ -61,14 +61,14 @@ io.set('transports', [
 
 var mongo = require('mongojs'),
         databaseUrl = 'test',
-        collections = ['notes', 'connections'],
+        collections = ['notes', 'handshakes'],
         db = mongo.connect(databaseUrl, collections),
         ObjectId = mongo.ObjectId;;
 
 io.sockets.on('connection', function(socket) {
     //socket.emit('msg', { msg: 'Welcome' });
 
-    db.connections.save(socket);
+    db.handshakes.save(socket.handshake, function(err, handShake) {});
     console.log('i.p.: ' + socket.handshake.address.address + ' port: ' + socket.handshake.address.port);
 
     socket.on('getStuff', function() {
