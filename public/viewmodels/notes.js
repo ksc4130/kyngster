@@ -43,10 +43,10 @@ $(function() {
                     $(this).mouseup(function() {
                     	socket.emit('updateDrag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
                     });
-                }).bind('mouseover', function(e) {
-                    $(this).css({ zIndex: 1 }).children('input.btnX').fadeIn(750);
-                }).bind('mouseout', function(e) {
-                    $(this).css({ zIndex: 0 }).children('input.btnX').fadeOut(750);
+                }).bind('mouseenter', function(e) {
+                    $(this).css({ zIndex: 1 }).stop().children('input.btnX').fadeIn(750);
+                }).bind('mouseleave', function(e) {
+                    $(this).css({ zIndex: 0 }).stop().children('input.btnX').fadeOut(750);
                 })
                 .children('intput.btnX')
                 .hide()
