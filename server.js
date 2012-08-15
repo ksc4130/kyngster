@@ -18,7 +18,7 @@ app.configure(function(){
     app.use(express.favicon());
     app.use(express.logger('dev'));
     app.use(express.bodyParser());
-    app.use(expres.cookieParser('ksc4130'));
+    app.use(express.cookieParser('ksc4130'));
     app.use(express.methodOverride());
     app.use(express.session());
     app.use(app.router);
