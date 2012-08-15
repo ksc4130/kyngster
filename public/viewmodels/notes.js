@@ -29,8 +29,8 @@ $(function() {
             _addDrag = function(el) {
                 var koDataEl = ko.dataFor(el);
 
-                var textareaWidth = $(el).children('div.scroll').children('textarea.note')[0].scrollWidth;
-                $(el).children('div.scroll')[0].style.width = textareaWidth + "px";
+                //var textareaWidth = $(el).children('div.scroll').children('textarea.note')[0].scrollWidth;
+                //$(el).children('div.scroll')[0].style.width = textareaWidth + "px";
 
                 $(el).draggable().resizable({
                     alsoResize: $(el).children('textarea.note')
