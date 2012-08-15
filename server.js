@@ -85,6 +85,7 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('updateDrag', function(noteIn) {
+        console.log(sys.inspect(noteIn));
         db.notes.update({ _id: noteIn._id }, {$set: { top: noteIn.top, left: noteIn.left }}, function(err, note) {
             if (err) {
                 console.log('Drag update error: ' + err);
