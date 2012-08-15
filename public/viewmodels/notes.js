@@ -44,9 +44,9 @@ $(function() {
                     	socket.emit('updateDrag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
                     });
                 }).bind('mouseenter', function(e) {
-                    $(this).css({ zIndex: 1 }).stop().children('input.btnX').fadeIn(250);
+                    $(this).css({ zIndex: 1 }).stop().children('input.btnX').stop().fadeIn(250);
                 }).bind('mouseleave', function(e) {
-                    $(this).css({ zIndex: 0 }).stop().children('input.btnX').fadeOut(250);
+                    $(this).css({ zIndex: 0 }).stop().children('input.btnX').stop().fadeOut(250);
                 })
                 .children('intput.btnX')
                 .hide()
