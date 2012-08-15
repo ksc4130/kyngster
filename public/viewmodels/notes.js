@@ -29,9 +29,6 @@ $(function() {
             _addDrag = function(el) {
                 var koDataEl = ko.dataFor(el);
 
-                //var textareaWidth = $(el).children('div.scroll').children('textarea.note')[0].scrollWidth;
-                //$(el).children('div.scroll')[0].style.width = textareaWidth + "px";
-
                 $(el).draggable().resizable({
                     alsoResize: $(el).children('textarea.note')
                 }).bind('resize', function() {
@@ -92,7 +89,7 @@ $(function() {
                 self.note.subscribe(function() {
                 	socket.emit('updateNote', { _id: self._id, note: self.note() });
                 });
-                if(!note || typeof (note.note) == 'undefined') {
+                if(!note) {
                     socket.emit('addNote', { _id: self._id, note: self.note(), left: self.left(), top: self.top(), width: self.width(), height: self.height() });
                 }
 
