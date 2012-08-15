@@ -44,9 +44,9 @@ $(function() {
                     	socket.emit('updateDrag', { _id: koDataEl._id, top: parseInt(koDataEl.top()), left: parseInt(koDataEl.left()) });
                     });
                 }).bind('mouseenter', function(e) {
-                    $(this).css({ zIndex: 1 }).stop().children('input.btnX').fadeIn(750);
+                    $(this).css({ zIndex: 1 }).stop().children('input.btnX').fadeIn(250);
                 }).bind('mouseleave', function(e) {
-                    $(this).css({ zIndex: 0 }).stop().children('input.btnX').fadeOut(750);
+                    $(this).css({ zIndex: 0 }).stop().children('input.btnX').fadeOut(250);
                 })
                 .children('intput.btnX')
                 .hide()
@@ -65,12 +65,12 @@ $(function() {
 
                 if(koDataEl.width() > 0) {
                     $(el).css({ width: koDataEl.width() })
-                    .children('textarea.note').css({ width: koDataEl.width() - 40 });
+                    .children('textarea.note').css({ width: koDataEl.width() - 40, 'margin-left': 20 });
                 }
 
                 if(koDataEl.height() > 0) {
                     $(el).css({ height: koDataEl.height() })
-                    .children('textarea.note').css({ height: koDataEl.height() - 40 });
+                    .children('textarea.note').css({ height: koDataEl.height() - 40, 'margin-top': 20 });
                 }
             },
             _note = function(note) {
