@@ -64,11 +64,13 @@ $(function() {
                 }
 
                 if(koDataEl.width() > 0) {
-                    $(el).css({ width: koDataEl.width() });
+                    $(el).css({ width: koDataEl.width() })
+                    .children('textarea.note').css({ width: koDataEl.width() - 40 });
                 }
 
                 if(koDataEl.height() > 0) {
-                    $(el).css({ height: koDataEl.height() });
+                    $(el).css({ height: koDataEl.height() })
+                    .children('textarea.note').css({ height: koDataEl.height() - 40 });
                 }
             },
             _note = function(note) {
