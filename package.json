@@ -17,7 +17,7 @@
     "express": "3.0.0rc3",
     "jade": "*",
     "socket.io": "*",
-    "mongoose": "*",
+    "mongojs": "*",
     "request": "*"
   },
   "noAnalyze": true,

@@ -56,18 +56,11 @@ io.set('transports', [
   , 'jsonp-polling'
 ]);
 
-var mongoose = require('mongoose'),
-    db = mongoose.createConnection('localhost', 'test', 27017);
-        var noteSchema = new mongoose.Schema({
-                        title: String,
-                        top: Number,
-                        left: Number,
-                        width: Number,
-                        height: Number,
-                        note: String
-                    });
 
-
+var mongo = require('mongojs'),
+        databaseUrl = 'test',
+        collections = ['notes', 'workspaces'],
+        db = mongo.connect(databaseUrl, collections);
 
 io.sockets.on('connection', function(socket) {
     //socket.emit('msg', { msg: 'Welcome' });
@@ -76,16 +69,14 @@ io.sockets.on('connection', function(socket) {
 
         console.log('getStuff');
 
-            var noteModel = db.model('note', noteSchema);
-            noteModel.find({}, function(err, found) {
-                console.log('in find');
-                if(err) {
-                	console.log(err);
-                }
-                else {
-                	socket.emit('notes',found);
-                }
-
+        db.notes.find({}, function(err, found) {
+            console.log('in find');
+            if(err) {
+            	console.log(err);
+            }
+            else {
+            	socket.emit('notes',found);
+            }
        });
     });
 
@@ -94,92 +85,56 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('updateDrag', function(noteIn) {
-                var noteModel = db.model('note', noteSchema);
-                noteModel.findOne({ _id: noteIn._id }, function (err, note) {
-                    if (err) {
-                        console.log('update error: ' + err);
-                    }
-                    else {
-                    	console.log(note);
-                        if(note && note.top && noteIn && note.top) {
-                        	console.log(note.top);
-                            note.top = noteIn.top;
-                            note.left = noteIn.left;
-                            note.save(function(err) {
-                                if(err) {
-                                    console.log('drag error: ' + err);
-                                }
-                                else {
-                                    //good update
-                                    console.log('good update');
-                                }
-                            });
-                        }
-                    }
-
-                });
-
+        db.notes.update({ _id: noteIn._id }, {$set: { top: noteIn.top, left: noteIn.left }}, function(err, note) {
+            if (err) {
+                console.log('Drag update error: ' + err);
+            }
+            else {
+                console.log('Good drag update by ' + socket.handshake.address);
+            }
+        });
     });
 
     socket.on('updateNote', function(noteIn) {
-        console.log('update noteIn: ' + noteIn);
-
-                var noteModel = db.model('note', noteSchema);
-                noteModel.findOne({ _id: noteIn._id }, function (err, note) {
-                    if (err) {
-                        console.log('update error: ' + err);
-                    }
-                    note.note = noteIn.note;
-                    note.save(function(err) {
-                        if(err) {
-                        	console.log('update note error: ' + sys.inspect(err));
-                        }
-                        else{
-                            //socket.emit('updateNote', note);
-                            socket.broadcast.emit('updateNote', note);
-                        }
-                    });
-                });
-
+        db.notes.update({ _id: noteIn._id }, {$set: { note: noteIn.note }}, function(err, note) {
+            if (err) {
+                console.log('Note update error: ' + err);
+            }
+            else {
+                console.log('Good note update by ' + socket.handshake.address);
+            }
         });
+    });
 
     socket.on('updateNoteEmitOnly', function(noteIn) {
     	socket.broadcast.emit('updateNote', noteIn);
     });
 
     socket.on('addNote', function(noteIn) {
-        console.log(noteIn);
 
-
-            var noteModel = db.model('note', noteSchema);
-
-            var note = new noteModel({
-                title: 'test Title',
-                top: noteIn.top,
-                left: noteIn.left,
-                width: noteIn.width,
-                height: noteIn.height,
-                note: noteIn.note
-            });
-            note.save(function(err) {
-                if(!err) {
-                    socket.emit('addNote', note);
-                    socket.broadcast.emit('addNote', note);
-                }
-            });
-
+        db.notes.save(noteIn, function(err, note) {
+            if(err) {
+                console.log('Add note error: ' + err);
+            }
+            else {
+                console.log('Good note add by ' + socket.handshake.address);
+                socket.emit('addNote', note);
+                socket.broadcast.emit('addNote', note);
+            }
+        });
     });
 
-    socket.on('removeNote', function(note) {
-        console.log(note);
-
-            var noteModel = db.model('note', noteSchema);
-
-            noteModel.remove({_id: note._id}, function(err) {
+    socket.on('removeNote', function(noteIn) {
+        db.notes.remove({ _id: noteIn._id }, function(err, note) {
+            if(err) {
+                console.log('Remove note error: ' + err);
+            }
+            else {
+                console.log('Good note removal by ' + socket.handshake.address);
                 socket.emit('removeNote', note);
                 socket.broadcast.emit('removeNote', note);
-            });
-
+            }
         });
+    });
 
 });
