@@ -144,6 +144,9 @@ $(function() {
         var $el = $('#' + size._id),
             el = document.getElementById(size._id);
         if($el) {
+            if(ko.dataFor(el).resizable()) {
+                ko.dataFor(el).resizable(false);
+            }
             $(el).children('textarea.note').css({   width: size.width - 40,
                                                     'margin-left': 20,
                                                     height: size.height - 40,
