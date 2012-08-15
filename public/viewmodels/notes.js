@@ -22,7 +22,7 @@ $(function() {
                     _notes.push(new _note(note));
                 }
                 else {
-                    var n = new _note();
+                    var n = new _note(false);
                 }
             },
 
@@ -96,6 +96,7 @@ $(function() {
                 	socket.emit('updateNote', { _id: self._id, note: self.note() });
                 });
                 if(!note || (note && !note._id)) {
+                    console.log('add');
                     socket.emit('addNote', { _id: self._id, note: self.note(), left: self.left(), top: self.top(), width: self.width(), height: self.height() });
                 }
 
@@ -120,7 +121,7 @@ $(function() {
     socket.on('notes', function(notes) {
         $.each(notes, function(i, note) {
             console.log(note);
-            vm.addNote({ note: note });
+            vm.addNote(note);
         });
     });
 
