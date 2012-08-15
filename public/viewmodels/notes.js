@@ -95,7 +95,7 @@ $(function() {
                 self.note.subscribe(function() {
                 	socket.emit('updateNote', { _id: self._id, note: self.note() });
                 });
-                if(!node || (node && !node._id)) {
+                if(!note || (note && !note._id)) {
                     socket.emit('addNote', { _id: self._id, note: self.note(), left: self.left(), top: self.top(), width: self.width(), height: self.height() });
                 }
 
