@@ -19,7 +19,7 @@ var app = module.exports = express();
 // Configuration
 
 app.configure(function(){
-    app.set('port', process.env.PORT || 80);
+    app.set('port', process.env.PORT || 3000);
     app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
     app.use(express.favicon());
@@ -47,22 +47,26 @@ app.get('/', routes.index);
 app.get('/register', routes.register);
 
 app.post('/register', function(req, res) {
-    console.log(req.body);
+    req.body.email = req.body.email.toLowerCase();
     res.contentType('json');
     db.users.find({ email: req.body.email }, function(err, found) {
         if(err) {
+            console.log('User registeration error on email check: ' + err);
             res.send({ code: 1 });
         }
         else {
             if(found.length > 0) {
+                console.log('User registeration failed: '+ req.body.email + ' already in use');
                 res.send({ code: 1 });
             }
             else {
                 db.users.save(req.body, function(err, saved) {
                     if(err || !saved) {
+                        console.log('User registeration error on insert: ' + err);
                         res.send({ code: 1 });
                     }
                     else {
+                        console.log('Good user registeration: ' + saved.email);
                         res.send({ code: 0 });
                     }
                 });
@@ -73,19 +77,16 @@ app.post('/register', function(req, res) {
 });
 
 app.post('/checkEmail', function(req, res) {
-    console.log(req.body.email);
+    req.body.email = req.body.email.toLowerCase();
     res.contentType('json');
     db.users.find({ email: req.body.email }, function(err, found) {
         if(err) {
-
         }
         else {
             if(found.length > 0) {
-                console.log(1);
                 res.send({ code: 1 });
             }
             else {
-                console.log(0);
                 res.send({ code: 0 });
             }
         }
