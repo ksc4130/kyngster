@@ -84,6 +84,7 @@ $(function() {
 
 	$('input#dob').datepicker({
 		changeMonth: true,
-		changeYear: true
+		changeYear: true,
+		new Date(1900, 1 - 1, 1)
 	});
 });//end doc ready
