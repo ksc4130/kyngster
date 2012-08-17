@@ -7,14 +7,19 @@ var express = require('express'),
     http = require('http'),
     sys = require('sys'),
     routes = require('./routes'),
-    path = require('path');
+    path = require('path'),
+    mongo = require('mongojs'),
+    databaseUrl = 'test',
+    collections = ['notes', 'handshakes', 'users'],
+    db = mongo.connect(databaseUrl, collections),
+    ObjectId = mongo.ObjectId;
 
 var app = module.exports = express();
 
 // Configuration
 
 app.configure(function(){
-    app.set('port', process.env.PORT || 80);
+    app.set('port', process.env.PORT || 3000);
     app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
     app.use(express.favicon());
@@ -39,6 +44,54 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 
+app.get('/register', routes.register);
+
+app.post('/register', function(req, res) {
+    console.log(req.body);
+    res.contentType('json');
+    db.users.find({ email: req.body.email }, function(err, found) {
+        if(err) {
+            res.send({ code: 1 });
+        }
+        else {
+            if(found.length > 0) {
+                res.send({ code: 1 });
+            }
+            else {
+                db.users.save(req.body, function(err, saved) {
+                    if(err || !saved) {
+                        res.send({ code: 1 });
+                    }
+                    else {
+                        res.send({ code: 0 });
+                    }
+                });
+            }
+        }
+
+    });
+});
+
+app.post('/checkEmail', function(req, res) {
+    console.log(req.body.email);
+    res.contentType('json');
+    db.users.find({ email: req.body.email }, function(err, found) {
+        if(err) {
+
+        }
+        else {
+            if(found.length > 0) {
+                console.log(1);
+                res.send({ code: 1 });
+            }
+            else {
+                console.log(0);
+                res.send({ code: 0 });
+            }
+        }
+    });
+});
+
 var s = http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
@@ -59,11 +112,7 @@ io.set('transports', [
 ]);
 
 
-var mongo = require('mongojs'),
-        databaseUrl = 'test',
-        collections = ['notes', 'handshakes'],
-        db = mongo.connect(databaseUrl, collections),
-        ObjectId = mongo.ObjectId;;
+
 
 io.sockets.on('connection', function(socket) {
     //socket.emit('msg', { msg: 'Welcome' });

@@ -1,0 +1,39 @@
+extends layout
+
+block content
+	article
+		header
+			div.mess(data-bind="visible: mess().length > 0, text: mess")
+		form
+			fieldset.left
+				div
+					label First Name
+					br
+					input(data-bind="value: fname, valueUpdate: 'afterkeydown'")
+				div
+					label Last Name
+					br
+					input(data-bind="value: lname, valueUpdate: 'afterkeydown'")
+				div
+					label Born on Date
+					br
+					input(id="dob", data-bind="value: dob, valueUpdate: 'afterkeydown'")
+			fieldset.right
+				div
+					label Email
+					br
+					input(data-bind="value: email, valueUpdate: 'afterkeydown'")
+				div
+					label Password
+					br
+					input(type="password", data-bind="value: password, valueUpdate: 'afterkeydown'")
+				div
+					label Confirm Password
+					br
+					input(type="password", data-bind="value: cPassword, valueUpdate: 'afterkeydown'")
+					br
+					input(type="button", data-bind="enable: isValid, click: register", value="Register")
+
+block scripts
+	script(src="/scripts/libs/knockout.validation.js")
+	script(src="/viewmodels/register.js")

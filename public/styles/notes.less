@@ -6,39 +6,60 @@
     display: none;
 }
 body {
-    background-color: #dbd1c8;
-    //background-image: url(img/concrete_wall.png);
+    header{
+        display: none;
+    }
     header#controls {
-        position: absolute;
-        top:-30px;
-        left: 0;
-        right: 0;
-        width: auto;
+        display: block;
+        position: relative;
+        top:-31px;
+        left: auto;
+        right: auto;
+        //width: auto;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
 
         section#controls {
             height: 30px;
-            background-color: #e18868;
-            border-bottom: 2px solid #343643;
+            //background-color: rgba(250, 250, 250, 0.898438);
+            //background-image: url('/styles/img/lightpaperfiber.png');
+            //background-repeat: repeat;
+            //background-color: #e18868;
+
+            //border-bottom: 1px solid #343643;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: #b6d6d4;
+            border-bottom: 1px solid #9a9ca9;
+            border-right: 1px solid #9a9ca9;
+            border-left: 1px solid #9a9ca9;
+            overflow: hidden;
 
             nav {
                 border: 0;
-                width: 600px;
-                margin-left: auto;
-                margin-right: auto;
+                //width: 600px;
+                //margin-left: auto;
+                //margin-right: auto;
+                width: 490px;
+                margin-left: 100px;
 
                 input.btn {
-                    font-family: arial;
-                    font-size: 15px;
+                    //font-family: Helvetica, Arial, sans-serif;
+                    font-size: .7em;
+                    display: block;
+                    //border-right: 1px solid #7B7878;
+                    //border-left: 1px solid #7B7878;
+                    //border: 1px solid black;
                     border: 0;
-                    padding: 4px 10px;
-                    margin-left: auto;
-                    margin-right: auto;
+                    padding: .15em .25em;
                     background-color: transparent;
-                    color: #fff;
+                    //color: #fff;
                     cursor: pointer;
-
+                    color: #409ea6;
+                    //color: #7B7878;
                     &:hover {
-                        color: #633039;
+                        color: #409ea6 *.8;
                     }
                 }
             }
@@ -47,21 +68,26 @@ body {
         section#btnControls {
             height: 20px;
             width: 50px;
-            background-color: #e18868;
-            border-bottom: 2px solid #343643;
-            border-right: 2px solid #343643;
-            border-left: 2px solid #343643;
-            margin-top: -2px;
-            margin-left: 150px;
+            background-color: #b6d6d4;
+            //background-color: rgba(250, 250, 250, 0.898438);
+            //background-color: #e18868;
+            // border-bottom: 1px solid #343643;
+            // border-right: 1px solid #343643;
+            // border-left: 1px solid #343643;
+            border-bottom: 1px solid #9a9ca9;
+            border-right: 1px solid #9a9ca9;
+            border-left: 1px solid #9a9ca9;
+            margin-top: -1px;
+            margin-left: 30px;
             border-bottom-right-radius: 25px;
             border-bottom-left-radius: 25px;
             z-index: 1;
-            -moz-box-shadow: 2px 2px rgba(0,0,0,0.2);
-            -webkit-box-shadow: 2px 2px rgba(0,0,0,0.2);
-            box-shadow: 2px 2px rgba(0,0,0,0.2);
+            //-moz-box-shadow: 2px 2px rgba(0,0,0,0.2);
+            //-webkit-box-shadow: 2px 2px rgba(0,0,0,0.2);
+            //box-shadow: 2px 2px rgba(0,0,0,0.2);
 
             &:hover {
-                box-shadow: 2px 2px rgba(0,0,0,0.3);
+                //box-shadow: 2px 2px rgba(0,0,0,0.3);
             }
         }/*end section#btnControls*/
     }
@@ -74,8 +100,8 @@ body {
         width: 200px;
         /*background-color: #ac8586; */
         //background-color: rgba(212, 255, 170, .8);
-        background-color: rgba(192, 235, 150, .8);
-
+        //background-color: rgba(192, 235, 150, .8);
+        background-color: rgba(209, 222, 216, .8);
         textarea.note{
             font-family: arial;
             font-size: 15px;

@@ -1,14 +1,17 @@
-!!! 5
+doctype 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/styles/style.css')
-    link(rel='stylesheet', href='/styles/jquery-ui-1.8.22.custom.css')
+	head
+		meta(charset="utf-8")
+		title= title
+		link(rel='stylesheet', href='/styles/style.css')
+		link(rel='stylesheet', href='/styles/jquery-ui-1.8.22.custom.css')
+		block head
+	body
+		header
+		block content
 
-  body
-    
-    script(src='/scripts/libs/jquery-1.7.2.min.js')
-    script(src='/scripts/libs/jquery-ui-1.8.22.custom.min.js')
-    script(src='/scripts/libs/knockout-2.1.0.js')
-    
-    body!= body
+	script(src='/scripts/libs/jquery-1.7.2.min.js')
+	script(src='/scripts/libs/jquery-ui-1.8.22.custom.min.js')
+	script(src='/scripts/libs/knockout-2.1.0.js')
+
+	block scripts

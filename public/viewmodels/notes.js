@@ -4,14 +4,20 @@ $(function() {
         $btnPan = $('header#controls section#btnControls');
 
     $btnPan.click(function(e) {
-        if($header.hasClass('closed')) {
+        if($header.position().top < 0) {
             $header.animate({ top: 0 }, 400);
-            $header.removeClass('closed');
         }
         else {
-            $header.animate({ top: -30 }, 400);
-            $header.addClass('closed');
+            $header.animate({ top: -31 }, 400);
         }
+        // if($header.hasClass('closed')) {
+        //     $header.animate({ top: 0 }, 400);
+        //     $header.removeClass('closed');
+        // }
+        // else {
+        //     $header.animate({ top: -31 }, 400);
+        //     $header.addClass('closed');
+        // }
 
     });
 
@@ -114,6 +120,23 @@ $(function() {
             addDrag: _addDrag
         }
     } ();
+
+    // ko.bindingHandlers.dragger = {
+    //     init: function (element, valueAccessor) {
+    //         var left = valueAccessor();
+
+    //         $(element).draggable({
+    //             drag: function(event, ui) {
+    //                 left(ui.position.left);
+    //             }
+    //         });
+    //     },
+    //     update: function(element, valueAccessor) {
+    //         var left = valueAccessor();
+    //         $(element).css("left", left());
+    //     }
+    // };
+
     ko.applyBindings(vm);
 
     var socket = io.connect();
