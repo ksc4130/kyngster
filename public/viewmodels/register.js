@@ -2,7 +2,7 @@ $(function() {
 	var vm = function() {
 		var _fname = ko.observable('').extend({ required: { message: '*'} }),
 			_lname = ko.observable('').extend({ required: { message: '*'} }),
-			_dob = ko.observable('').extend({ required: { message: '*'}, date: { message: '*' } }),
+			_dob = ko.observable('09/15/1986').extend({ required: { message: '*'}, date: { message: '*' } }),
 			_email = ko.observable('').extend({ required: { message: '*'}, email: { message: '*' } }),
 			_password = ko.observable('').extend({ required: { message: '*'} }),
 			_cPassword = ko.observable('').extend({ required: { message: '*'}, equal: { params: _password, message: '*' } }),
