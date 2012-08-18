@@ -1,9 +1,6 @@
 $(function() {
-	// ko.bindingHandler.errorMes = {
-	// 	update: function(el, vA) {
-	// 		$(el).next('span.validationMessage').text('test').css({display: 'block'});
-	// 	}
-	// }
+	//
+
 	var vm = function() {
 		var _fname = ko.observable('').extend({ required: { message: '*'} }),
 			_lname = ko.observable('').extend({ required: { message: '*'} }),
