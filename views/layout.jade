@@ -8,6 +8,8 @@ html
 		block head
 	body
 		header
+		-if(typeof(err) !== 'undefined')
+			h3.err= err
 		block content
 
 	script(src='/scripts/libs/jquery-1.7.2.min.js')

@@ -8,6 +8,7 @@ block content
 		section#controls
 			nav
 				input(type="button", class="btn", value="Add Note", data-bind="click: addNote")
+				input(type="button", class="btn logout", value="Log out", onclick="(function(){window.location='/logout'}());")
 		section#btnControls
 
 	// ko template: { name: 'note-template', foreach: notes, afterAdd: addDrag}

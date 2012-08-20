@@ -8,6 +8,9 @@ var express = require('express'),
     sys = require('sys'),
     routes = require('./routes'),
     path = require('path'),
+    user = require('./models/userModel'),
+    user = new user('test'),
+
     mongo = require('mongojs'),
     databaseUrl = 'test',
     collections = ['notes', 'handshakes', 'users'],
@@ -27,7 +30,8 @@ app.configure(function(){
     app.use(express.bodyParser());
     app.use(express.cookieParser('ksc4130'));
     app.use(express.methodOverride());
-    app.use(express.session());
+    app.use(express.session({ secret: 'lala!!4130' }));
+    //app.use(express.session({secret: 'secret', key: 'express.sid'}));
     app.use(app.router);
     app.use(express.static(path.join(__dirname, 'public')));
 });
@@ -49,31 +53,43 @@ app.get('/register', routes.register);
 app.post('/register', function(req, res) {
     req.body.email = req.body.email.toLowerCase();
     res.contentType('json');
-    db.users.find({ email: req.body.email }, function(err, found) {
+    user.register(req.body, function(err, user) {
         if(err) {
-            console.log('User registeration error on email check: ' + err);
-            res.send({ code: 1 });
+            res.send({ code: 1, err: err})
         }
         else {
-            if(found.length > 0) {
-                console.log('User registeration failed: '+ req.body.email + ' already in use');
-                res.send({ code: 1 });
-            }
-            else {
-                db.users.save(req.body, function(err, saved) {
-                    if(err || !saved) {
-                        console.log('User registeration error on insert: ' + err);
-                        res.send({ code: 1 });
-                    }
-                    else {
-                        console.log('Good user registeration: ' + saved.email);
-                        res.send({ code: 0 });
-                    }
-                });
-            }
+            req.session.user = user;
+            res.send({ code: 0 })
         }
-
     });
+});
+
+app.get('/login', function(req, res) {
+    if(typeof(req.session.user) === 'undefined') {
+       res.render('login', { title: 'Login' });
+    }
+    else {
+        res.render('notes', { title: 'Notes' });
+    }
+});
+
+app.post('/login', function(req, res) {
+    req.body.email = req.body.email.toString().toLowerCase();
+    res.contentType('json');
+    user.login(req.body.email, req.body.password, function(err, user) {
+        if(err) {
+            res.send({ code: 1, err: err });
+        }
+        else {
+            req.session.user = user;
+            res.send({ code: 0});
+        }
+    });
+});
+
+app.get('/logout', function(req, res) {
+    req.session.destroy();
+    res.render('login', { title: 'Login' })
 });
 
 app.post('/checkEmail', function(req, res) {

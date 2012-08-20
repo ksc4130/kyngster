@@ -1,7 +1,20 @@
-form(method="post", action="/login")
-    input(name="user" id="user")
-    br
-    input(name="password" id="password" type="password")
-    br
-    br
-    input(type="submit" value="Login")
+extends layout
+block content
+	article
+		form
+			header
+				div.mess(data-bind="visible: mess().length > 0, text: mess")
+			fieldset
+				div
+					label Email
+					br
+					input(data-bind="value: email")
+				div
+					label Password
+					br
+					input(data-bind="value: password", type="password")
+				div
+					input(type="button", data-bind="click: login", value="Login")
+block scripts
+	script(src="/scripts/libs/knockout.validation.js")
+	script(src="/viewmodels/login.js")

@@ -39,12 +39,16 @@ body header#controls section#controls nav {
 }
 body header#controls section#controls nav input.btn {
   font-size: .7em;
-  display: block;
+  display: inline;
   border: 0;
   padding: .15em .25em;
   background-color: transparent;
   cursor: pointer;
   color: #409ea6;
+}
+body header#controls section#controls nav input.btn.logout {
+  font-size: .4em;
+  float: right;
 }
 body header#controls section#controls nav input.btn:hover {
   color: #337e85;

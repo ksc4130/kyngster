@@ -164,6 +164,9 @@ html body {
   font-size: 1.5em;
   color: rgba(0, 0, 0, 0.4);
 }
+html body h3.err {
+  color: red;
+}
 html body div.ui-datepicker {
   font-size: 12px;
 }
