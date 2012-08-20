@@ -201,6 +201,10 @@ html body article form fieldset.right {
   width: 300px;
   border: 1 solid red;
 }
+html body article form fieldset.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 html body article input {
   padding: 10px;
   background-color: rgba(160, 183, 196, 0.3);
