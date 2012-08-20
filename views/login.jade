@@ -14,8 +14,7 @@ block content
 					br
 					input(data-bind="value: password", type="password")
 				div
-					input(type="button", data-bind="click: login", value="Login")
-					span &nbsp;
+					input(type="button", style="float: none; margin-right: 20px;", data-bind="click: login", value="Login")
 					input(type="button", value="Sign up", onclick="(function(){window.location='/register'}());")
 block scripts
 	script(src="/scripts/libs/knockout.validation.js")
