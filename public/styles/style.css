@@ -199,9 +199,9 @@ html body article form fieldset.right {
   right: 0;
   top: 0;
   width: 300px;
-  border: 1 solid red;
 }
 html body article form fieldset.center {
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
