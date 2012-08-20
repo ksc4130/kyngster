@@ -15,6 +15,7 @@ block content
 					input(data-bind="value: password", type="password")
 				div
 					input(type="button", data-bind="click: login", value="Login")
+					span &nbsp;
 					input(type="button", value="Sign up", onclick="(function(){window.location='/register'}());")
 block scripts
 	script(src="/scripts/libs/knockout.validation.js")
